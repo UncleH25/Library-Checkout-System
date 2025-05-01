@@ -35,5 +35,21 @@ int main()
 	double finalFeeTextbook = (isTextbook == 'Y' || isTextbook == 'y') + (TEXTBOOK_RATE * daysDue);
 	double finalFeeBook = (isTextbook == 'N' || isTextbook == 'n') + (NORMAL_RATE * daysDue);
 
+	//Output
+	cout << fixed << setprecision(2);
+	cout << "\n--- Checkout Summary ---\n";
+	cout << "Name: " << userName << endl;
+	cout << "Book Title: " << bookTitle << endl;
+	cout << "Days Due: " << daysDue << endl;
+	cout << "Is Textbook: " << (isTextbook == 'Y' || isTextbook == 'y') << endl;
+	cout << "\n--- Checkout Fee Summary ---\n";
+	cout << "Normal Book Fee: R" << finalFeeBook << endl;
+	cout << "Textbook Fee: R" << finalFeeTextbook << endl;
+	cout << "\n------------------------\n";
+	cout << "Thank you for using the Library Book Checkout System!\n";
+	cout << "Please return the book on time to avoid late fees.\n";
+	cout << "Have a great day!\n";
+	cout << "\n------------------------\n";
+
 	return 0;
 }
