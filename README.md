@@ -6,6 +6,8 @@ A C++ console program that calculates and displays a checkout fee summary based 
 
 This program prompts the user for their name, the book title, the number of days the book is due in, and whether the book is a textbook. It then calculates two possible fees: one for a normal book and one for a textbook—both based on fixed daily rates.
 
+**⚠️ Note: The program calculates both fees regardless of the actual book type. The user must refer to the correct one based on the Y/N input.**
+
 ## Example Output
 ```
 Enter your name:
