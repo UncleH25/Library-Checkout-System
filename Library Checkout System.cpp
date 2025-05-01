@@ -41,7 +41,7 @@ int main()
 	cout << "Name: " << userName << endl;
 	cout << "Book Title: " << bookTitle << endl;
 	cout << "Days Due: " << daysDue << endl;
-	cout << "Is Textbook: " << (isTextbook == 'Y' || isTextbook == 'y') << endl;
+	cout << "Is Textbook: " << isTextbook << endl;
 	cout << "\n--- Checkout Fee Summary ---\n";
 	cout << "Normal Book Fee: R" << finalFeeBook << endl;
 	cout << "Textbook Fee: R" << finalFeeTextbook << endl;
