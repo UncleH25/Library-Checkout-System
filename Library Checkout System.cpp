@@ -31,5 +31,9 @@ int main()
 	cout << "Is the book a textbook? (Y/N): \n";
 	cin >> isTextbook;
 
+	//Calculate fee based on type of book
+	double finalFeeTextbook = (isTextbook == 'Y' || isTextbook == 'y') + (TEXTBOOK_RATE * daysDue);
+	double finalFeeBook = (isTextbook == 'N' || isTextbook == 'n') + (NORMAL_RATE * daysDue);
+
 	return 0;
 }
